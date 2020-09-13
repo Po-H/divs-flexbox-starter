@@ -99,6 +99,7 @@ textarea {
 html {
   background-color: black;
   height: 100%;
+  width: 100%
 }
 
 body {
@@ -106,32 +107,120 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  color: black;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 400;
+header {
+  background-color: black;
+  height: 120px;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  height: 120px;
+  width: 100%;
+}
+
+main p {
+  background-color: black;
+  height: 120px;
+  width: 100%;
+  border-bottom: 1px solid hotpink;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+header, footer, main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  border-top: 1px solid hotpink;
+  margin-top: 30px;
+}
+
+h1 {
+  font-family: 'Charm', cursive;
+  color: hotpink;
+  font-size: 3em;
+}
+
+.flex-container {
+  /*add display:flex and set justify-content to space-between*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #FFE8E9;
   line-height: 1.5em;
   font-size: 1em;
   background-color: black;
-  height: 300px;
+  height: 200px;
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
+}
+
+p, .flex-items {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+#div-1 {
+  flex: 1 200px;
+  border-right: 1px solid hotpink;
+  padding-right: 20px;
+}
+
+#div-2 {
+  flex: 1 200px;
+  border-right: 1px solid hotpink;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#div-3 {
+  flex: 1 200px;
+  padding-left: 20px;
+}
+
+/***** FOOTER *****/
+
+#contact-box {
+  background-color: pink;
+  width: 100%;
+  margin-top: 40px;
   text-align: center;
 }
 
-.div-1, .div-2 {
-  border-right: 1px solid #FFE8E9; 
-  padding-right: 30px;
+a {
+    text-decoration: none;
+    font-family: 'Charm', cursive;
+    color: #5980a6;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul img {
+    font-size: 32px;
+    padding-right: 48px;
 }
 
 
